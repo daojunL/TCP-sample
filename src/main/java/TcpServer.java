@@ -28,6 +28,7 @@ public class TcpServer {
             StringBuilder sb = new StringBuilder();
             // Listens for a connection to be made to this socket and accepts
             //     * it. The method blocks until a connection is made.
+            // 阻塞操作，一旦连接成功会返回一个新的Socket.
             Socket connect = service.accept();
             // 输入流
             InputStream in = connect.getInputStream();

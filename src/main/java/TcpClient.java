@@ -10,13 +10,13 @@ import java.util.Scanner;
  * @author Liang_Daojun
  * @date 2022/1/22 10:21 PM
  */
-public class TCPClient {
+public class TcpClient {
 
     public static void main(String[] args) throws IOException {
-        TCPClient tcpClient = new TCPClient();
+        TcpClient tcpClient = new TcpClient();
         SimpleDateFormat format = new SimpleDateFormat("hh-MM-ss");
         Scanner scanner = new Scanner(System.in);
-        // 需要一直发起对server的请求 
+        // 需要一直发起对server的请求
         while (true) {
             String msg = scanner.nextLine();
             if ("#".equals(msg)) break;

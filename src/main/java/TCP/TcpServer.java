@@ -1,3 +1,5 @@
+package TCP;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -9,6 +11,7 @@ import java.net.Socket;
  * @author Liang_Daojun
  * @date 2022/1/22 9:57 PM
  */
+// BIO (Blocking-IO, 一个连接会有一个线程来处理 )
 public class TcpServer {
     public static final char END_CHAR = '#';
     public static final String SERVICE_IP = "127.0.0.1";

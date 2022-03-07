@@ -1,3 +1,5 @@
+package TCP;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -34,7 +36,7 @@ public class TcpClient {
         OutputStream out = client.getOutputStream();
         out.write(msg.getBytes());
         InputStream in = client.getInputStream();
-        for (int c = in.read(); c!=TcpServer.END_CHAR; c = in.read()) {
+        for (int c = in.read(); c!= TcpServer.END_CHAR; c = in.read()) {
             if (c == -1) break;
             sb.append((char) c);
         }

@@ -1,4 +1,6 @@
-Java 实现TCP
+## Project 
+分别用BIO和NIO和原生Java API实现TCP的demo project. 
+
 ## Client
 send & receive 两个主要操作
 
